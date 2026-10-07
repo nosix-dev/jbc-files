@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Téléchargement de fichiers J.B.C</title>
     
-    <!-- 🎯 FAVICON (logo dans l'onglet du navigateur) -->
     <link rel="icon" type="image/png" href="photos/logo.png">
     
     <style>
@@ -60,9 +59,6 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
         }
 
-        /* ============================================= */
-        /* LOGO EN HAUT DU SITE                          */
-        /* ============================================= */
         .header-logo {
             display: flex;
             justify-content: center;
@@ -114,8 +110,15 @@
 
         .download-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+        }
+
+        .download-grid .centered {
+            grid-column: 1 / -1;
+            max-width: 385px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .download-btn {
@@ -293,6 +296,15 @@
             margin: 30px 0 25px 0;
         }
 
+        @media (max-width: 700px) {
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+            .download-grid .centered {
+                max-width: 100%;
+            }
+        }
+
         @media (max-width: 500px) {
             .container {
                 padding: 30px 20px;
@@ -344,9 +356,6 @@
 <body>
     <div class="container">
         
-        <!-- ============================================= -->
-        <!-- 🎯 LOGO EN HAUT DU SITE                       -->
-        <!-- ============================================= -->
         <div class="header-logo">
             <img src="photos/logo.png" alt="Logo J.B.C Files">
         </div>
@@ -392,6 +401,29 @@
                     </svg>
                 </div>
             </a>
+
+            <!-- ============================================= -->
+            <!-- BOUTON 3 - CENTRÉ EN BAS AU MILIEU            -->
+            <!-- ✏️ REMPLACEZ LE LIEN MEDIAFIRE PAR LE VÔTRE    -->
+            <!-- ============================================= -->
+            <a href="https://www.mediafire.com/file/00d2hm1b6rib2ke/LIGHTBOX+J.B.C.zip/file" 
+               target="_blank" rel="noopener noreferrer" class="download-btn centered">
+                <div class="icon">
+                    <img src="photos/logo.png" alt="Logo">
+                </div>
+                <div class="file-info">
+                    <span class="file-title">LIGHTBOX J.B.C</span>
+                    <span class="file-name">LIGHTBOX J.B.C.zip</span>
+                </div>
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </div>
+            </a>
+
         </div>
 
         <div class="divider"></div>
