@@ -108,6 +108,25 @@
             font-size: 0.95em;
         }
 
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #ffffff;
+            font-size: 1.15em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.25), transparent);
+        }
+
         .download-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -353,6 +372,9 @@
         <h1>📥 Téléchargements</h1>
         <p class="subtitle">Cliquez sur un fichier pour le télécharger via MediaFire</p>
 
+        <!-- SECTION MODS -->
+        <h2 class="section-title">🚚 Mods &amp; Plugins</h2>
+
         <div class="download-grid">
             <!-- BOUTON 1 - SKIN CAMION J.B.C -->
             <a href="https://www.mediafire.com/file/zasg9s3y45rdpsm/SKIN+CAMION+J.B.C.rar/file" 
@@ -420,6 +442,33 @@
                 <div class="file-info">
                     <span class="file-title">LIGHTBOX J.B.C</span>
                     <span class="file-name">LIGHTBOX J.B.C.zip</span>
+                </div>
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION TEMPLATES -->
+        <h2 class="section-title">🎨 Templates</h2>
+
+        <div class="download-grid">
+            <!-- TEMPLATE 1 - TEMPLATE CAMION (remplace le lien) -->
+            <a href="https://sharemods.com/2oy48qg0wud4/TEMPLATE_ALL_J.BC.zip.html" 
+               target="_blank" rel="noopener noreferrer" class="download-btn">
+                <div class="icon">
+                    <img src="photos/logo.png" alt="Logo">
+                </div>
+                <div class="file-info">
+                    <span class="file-title">TEMPLATE ALL J.B.C</span>
+                    <span class="file-name">TEMPLATE ALL J.B.C.zip</span>
                 </div>
                 <div class="arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
